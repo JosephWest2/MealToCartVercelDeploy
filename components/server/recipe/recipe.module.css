@@ -1,0 +1,29 @@
+.recipeGrid {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    grid-template-areas: 
+        "header header"
+        "image info"
+        "summary summary"
+        "link link";
+}
+.header {
+    font-size: 2em;
+    grid-area: header;
+}
+.image {
+    grid-area: image;
+}
+.info {
+    align-self: center;
+    grid-area: info;
+}
+.summary {
+    grid-area: summary;
+}
+.link {
+    grid-area: link;
+}
